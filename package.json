@@ -4,6 +4,7 @@
     "description": "Maude Language Support",
     "version": "1.0.0",
     "publisher": "Sirquini",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.18.0"
     },
