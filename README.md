@@ -10,7 +10,7 @@ Includes language declarations and textmate tokenizers, providing highlighting f
 
 Also includes some snippets adapted to better work on Visual Studio Code. Removing regular expression substitution on placeholder text, see [issue #34683](https://github.com/Microsoft/vscode/issues/34683)
 
-![](images/VSCodeMaude.png)
+![](https://github.com/Sirquini/vscode-maude/blob/master/images/VSCodeMaude.png)
 
 ## Release Notes
 

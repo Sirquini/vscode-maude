@@ -39,5 +39,6 @@
                 "path": "./snippets/snippets.json"
             }
         ]
-    }
+    },
+    "homepage": "https://github.com/Sirquini/vscode-maude/blob/master/README.md"
 }
