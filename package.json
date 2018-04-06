@@ -3,7 +3,7 @@
     "displayName": "Maude",
     "description": "Maude Language Support",
     "version": "1.0.0",
-    "publisher": "Sirquini",
+    "publisher": "sirquini",
     "license": "MIT",
     "engines": {
         "vscode": "^1.18.0"
