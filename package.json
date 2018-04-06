@@ -40,5 +40,12 @@
             }
         ]
     },
-    "homepage": "https://github.com/Sirquini/vscode-maude/blob/master/README.md"
+    "homepage": "https://github.com/Sirquini/vscode-maude/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/Sirquini/vscode-maude/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sirquini/vscode-maude.git"
+    }
 }
