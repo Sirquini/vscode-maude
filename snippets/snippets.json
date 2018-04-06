@@ -1,0 +1,176 @@
+{
+	"ceq": {
+		"prefix": "ceq",
+		"body": "ceq ${1:X} = ${2:Y}\n\tif ${3:true = false}${4: /\\\\ ${5:true : Bool}} .",
+		"description": "Conditional Equation …",
+		"scope": "source.maude meta.module"
+	},
+	"cmb": {
+		"prefix": "cmb",
+		"body": "cmb ${1:X} : ${2:Elt}\n\tif ${3:true = false}${4: /\\\\ ${5:true : Bool}} .",
+		"description": "Conditional Membership …",
+		"scope": "source.maude meta.module"
+	},
+	"crl": {
+		"prefix": "crl",
+		"body": "crl ${1:[${2:label}]} ${3:Term} => ${4:Term}\n\tif ${5:true = false}${6: /\\\\ ${7:true : Bool}} .",
+		"description": "Conditional Rule …",
+		"scope": "source.maude meta.module.mod, source.maude meta.module.th"
+	},
+	"eq": {
+		"prefix": "eq",
+		"body": "eq ${1:X} = ${2:Y} .",
+		"description": "Equation …",
+		"scope": "source.maude meta.module"
+	},
+	"ext": {
+		"prefix": "ext",
+		"body": "extending ${1:MODULE} .",
+		"description": "Extending …",
+		"scope": "source.maude meta.module"
+	},
+	"*": {
+		"prefix": "*",
+		"body": "* ($1)",
+		"description": "Insert Renaming",
+		"scope": "source.maude meta.module meta.import"
+	},
+	"inc": {
+		"prefix": "inc",
+		"body": "including ${1:MODULE} .",
+		"description": "Including …",
+		"scope": "source.maude meta.module"
+	},
+	"/": {
+		"prefix": "/",
+		"body": "/\\\\ ${1:true : Bool}",
+		"description": "Insert Condition",
+		"scope": "source.maude meta.condition"
+	},
+	"[": {
+		"prefix": "[",
+		"body": "[${1:ditto}",
+		"description": "Insert Operator Attributes",
+		"scope": "source.maude meta.definition.operator"
+	},
+	"[1": {
+		"prefix": "[",
+		"body": "[${1:nonexec}",
+		"description": "Insert Statement Attributes",
+		"scope": "source.maude meta.rule"
+	},
+	"mb": {
+		"prefix": "mb",
+		"body": "mb ${1:X} : ${2:Elt} .",
+		"description": "Membership …",
+		"scope": "source.maude meta.module"
+	},
+	"fm": {
+		"prefix": "fm",
+		"body": "fmod ${1:FMOD}${2:{${3:X} :: ${4:TRIV}\\}} is\n\t$0\nendfm",
+		"description": "New Functional Module",
+		"scope": "source.maude"
+	},
+	"fth": {
+		"prefix": "fth",
+		"body": "fth ${1:FTH} is\n\t$0\nendfth",
+		"description": "New Functional Theory",
+		"scope": "source.maude"
+	},
+	"m": {
+		"prefix": "m",
+		"body": "mod ${1:MOD}${2:{${3:X} :: ${4:TRIV}\\}} is\n\t$0\nendm",
+		"description": "New System Module",
+		"scope": "source.maude"
+	},
+	"th": {
+		"prefix": "th",
+		"body": "th ${1:TH} is\n\t$0\nendth",
+		"description": "New System Theory",
+		"scope": "source.maude"
+	},
+	"v": {
+		"prefix": "v",
+		"body": "view ${1:VIEW} from ${2:SOURCE} to ${3:TARGET} is\n\t$0\nendv",
+		"description": "New View",
+		"scope": "source.maude"
+	},
+	"op": {
+		"prefix": "op",
+		"body": "op ${1:f} : ${2:Nat} -> ${3:Nat} .",
+		"description": "Operator …",
+		"scope": "source.maude meta.module"
+	},
+	"ops": {
+		"prefix": "ops",
+		"body": "op ${1:f} ${2:g} : ${3:Nat} -> ${4:Nat} .",
+		"description": "Operators …",
+		"scope": "source.maude meta.module"
+	},
+	"~>": {
+		"prefix": "op~",
+		"body": "op ${1:f} : ${2:Nat} ~> ${3:Nat} .",
+		"description": "Partial Operator …",
+		"scope": "source.maude meta.module"
+	},
+	"pr": {
+		"prefix": "pr",
+		"body": "protecting ${1:MODULE} .",
+		"description": "Protecting …",
+		"scope": "source.maude meta.module"
+	},
+	"op1": {
+		"prefix": "op",
+		"body": "op ${1:from} to term ${2:to} .",
+		"description": "Rename Operator … to Term …",
+		"scope": "source.maude meta.view"
+	},
+	"rl": {
+		"prefix": "rl",
+		"body": "rl ${2:[${1:label}]} ${3:Term} => ${4:Term} .",
+		"description": "Rule …",
+		"scope": "source.maude meta.module.mod, source.maude meta.module.th"
+	},
+	"sort": {
+		"prefix": "sort",
+		"body": "sort ${1:One} .",
+		"description": "Sort …",
+		"scope": "source.maude meta.module"
+	},
+	"sorts": {
+		"prefix": "sorts",
+		"body": "sort ${1:One} ${2:, Two} .",
+		"description": "Sorts …",
+		"scope": "source.maude meta.module"
+	},
+	"sub": {
+		"prefix": "sub",
+		"body": "subsort ${1:One} < ${2:Two} .",
+		"description": "Subsort …",
+		"scope": "source.maude meta.module"
+	},
+	"subs": {
+		"prefix": "subs",
+		"body": "subsort ${1:One} < ${2:Two} < ${3:Three} .",
+		"description": "Subsorts …",
+		"scope": "source.maude meta.module"
+	},
+	"->": {
+		"prefix": "->",
+		"body": "op${1/.+(\\s+).+|.+/(?1:s:)/} ${1:f} : ${2:Nat}${2/.+/ /}-> ${3:Nat} .",
+		"description": "Total Operator …",
+		"scope": "source.maude meta.module"
+	},
+	"var": {
+		"prefix": "var",
+		"body": "var ${1:X} : ${2:Elt} .",
+		"description": "Variable …",
+		"scope": "source.maude meta.module, source.maude meta.view"
+	},
+	"vars": {
+		"prefix": "vars",
+		"body": "vars ${1:X} ${2:Y} : ${3:Elt} .",
+		"description": "Variables …",
+		"scope": "source.maude meta.module, source.maude meta.view"
+	}
+}

@@ -1,0 +1,42 @@
+{
+    "name": "maude",
+    "displayName": "Maude",
+    "description": "Maude Language Support",
+    "version": "1.0.0",
+    "publisher": "Sirquini",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "maude",
+                "aliases": [
+                    "Maude",
+                    "maude"
+                ],
+                "extensions": [
+                    ".maude"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "maude",
+                "scopeName": "source.maude",
+                "path": "./syntaxes/Maude.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "maude",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
